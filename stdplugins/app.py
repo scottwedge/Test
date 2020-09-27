@@ -35,7 +35,7 @@ async def apk(e):
     except IndexError:
         await e.edit("No result found in search. Please enter **Valid app name**")
     except Exception as err:
-        await e.edit("Exception Occured:- "+str(err))
+        await e.edit("Exception Occurred:- "+str(err))
 
 @borg.on(admin_cmd(pattern="appr (.*)", allow_sudo=True))
 async def apkr(e):
@@ -64,4 +64,4 @@ async def apkr(e):
     except IndexError:
         await e.edit("No result found in search. Please enter **Valid app name**")
     except Exception as err:
-        await e.edit("Exception Occured:- "+str(err))
+        await e.edit("Exception Occurred:- "+str(err))
